@@ -1,0 +1,11 @@
+{
+  "name": "wordle-clone",
+  "version": "1.0.0",
+  "description": "Word game implemented with react, nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Steven Mlodzianoski",
+  "license": "ISC"
+}
