@@ -4,7 +4,7 @@
   "description": "A boilerplate project using Node, Express, and React.",
   "main": "index.js",
   "scripts": {
-    "start": "yarn parcel src/routes/base.html",
+    "start": "yarn parcel src/public/html/base.html",
     "test": "test"
   },
   "author": "Steven Mlodzianoski",

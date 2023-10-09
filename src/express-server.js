@@ -4,10 +4,10 @@ var path = require('path');
 
 // Render a static html file at the root path
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'routes/base.html'));
+  res.sendFile(path.join(__dirname, 'public/html/base.html'));
 });
 // TODO: load static files from a "public" dir
-app.use('/static', express.static(path.join(__dirname, 'routes/static')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Simple route example
 app.get('/about', function (req, res) {
@@ -15,7 +15,7 @@ app.get('/about', function (req, res) {
 });
 
 // Setup a route file, put multiple endpoints in that file
-app.use('/api/user', require('./routes/api/user'));
+app.use('/api/user', require('./lib/api/user'));
 
 // Start the server
 var port = 3000;
