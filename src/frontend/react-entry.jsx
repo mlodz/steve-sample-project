@@ -1,27 +1,18 @@
-
-console.log('the react entry file, jsx');
-
 import React  from 'react';
-import ReactDOM  from 'react-dom';
+import ReactDOM  from 'react-dom/client';
 
-const e = React.createElement;
+import SimpleFetchExample from './SimpleFetchExample/SimpleFetchExample.jsx';
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
+class App extends React.Component {
   render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
     return (
-      <input type="button" value="Like Me Button" onClick={() => this.setState({liked: true})} />
-      );
+      <div className="App">
+        <SimpleFetchExample />
+      </div>
+    );
   }
 }
 
 const domContainer = document.querySelector('#react-root');
 const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+root.render(<App />);

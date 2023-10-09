@@ -2,19 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-// Render a static html file at the root path
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'public/html/base.html'));
-});
-// TODO: load static files from a "public" dir
-app.use('/static', express.static(path.join(__dirname, 'public')));
-
-// Simple route example
-app.get('/about', function (req, res) {
-  res.send('this is an about page');
-});
-
 // Setup a route file, put multiple endpoints in that file
+app.use('/api/common', require('./lib/api/common'));
 app.use('/api/user', require('./lib/api/user'));
 
 // Start the server
