@@ -1,0 +1,13 @@
+nav {
+  background-color: var(--second-bg-color);
+  padding: 1em;
+}
+
+nav input {
+  margin: 0 10px;
+}
+
+
+label {
+  display: block;
+}

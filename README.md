@@ -14,3 +14,15 @@ Add static public files in `src/assets/`.
 
 Add react files in `src/frontend/`.
 
+## Docker, Postgresql
+
+### Setup
+`docker pull postgres`
+
+### Run
+`docker run --name grim -e POSTGRES_PASSWORD=woof -d postgres`
+
+### Interact
+Run `psql` inside the running container.
+
+`docker exec -it grim psql -U postgres`

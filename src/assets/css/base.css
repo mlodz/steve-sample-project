@@ -1,27 +1,21 @@
+:root {
+  --main-bg-color: #b0f0a8;
+  --second-bg-color: #ddf;
+  --main-color: #1a4c14;
+}
+
 body {
-    padding: 0;
-    margin: 0;
+  font-family: arial, san-serif;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    color: salmon;
-    background-color: peachpuff;
-    border-bottom: 2px solid black;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  border-bottom: 2px solid black;
 }
 header h1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-header .logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-header .logo img {
-    width: 50px;
-    border: 2px solid pink;
+  padding: 0.5em 0.2em;
+  margin: 0;
 }
