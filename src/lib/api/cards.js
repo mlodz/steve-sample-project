@@ -10,7 +10,7 @@ router.post('/card', function(req, res, next) {
 
 router.get('/cards', async function(req, res, next) {
   let myCards = cards.readCards();
-  await new Promise(res => setTimeout(res, 2000)); // sleep 2 secs
+  await new Promise(res => setTimeout(res, 500)); // sleep 1 sec
   res.json({cards: myCards});
 });
 

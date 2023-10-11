@@ -4,8 +4,9 @@
   "description": "A boilerplate project using Node, Express, and React.",
   "main": "index.js",
   "scripts": {
-    "start": "yarn parcel src/assets/html/base.html",
-    "node-server": "node src/express-server.js",
+    "start": "concurrently \"npm run frontend\" \"npm run node-server\"",
+    "frontend": "yarn parcel src/assets/html/base.html",
+    "node-server": "node --watch src/express-server.js",
     "test": "test"
   },
   "author": "Steven Mlodzianoski",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "buffer": "^6.0.3",
+    "concurrently": "^8.2.1",
     "parcel": "^2.9.3",
     "process": "^0.11.10"
   }
