@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders title, body, and footer 1`] = `
+<div
+  className="Card"
+>
+  <h1
+    className="title nowrap"
+  >
+    <span>
+      Day Of The Week
+    </span>
+  </h1>
+  <div
+    className="body"
+  >
+    <div>
+      Today is Tuesday
+    </div>
+  </div>
+  <div
+    className="footer nowrap"
+  >
+    Missing Footer
+  </div>
+</div>
+`;
