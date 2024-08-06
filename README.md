@@ -9,8 +9,9 @@ Run `npm start` to start both the the react dev server and express backend in wa
 Make sure there are no errors (for example, yarn not installed). 
 
 Both the Node server and front-end servers should be running.
-http://127.0.0.1:3000/api/common/random-number
-http://127.0.0.1:1234/
+
+* http://127.0.0.1:3000/api/common/random-number
+* http://127.0.0.1:1234/
 
 Run tests with `npm test`; run and open coverage report with `npm run coverage:open`.
 
